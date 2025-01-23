@@ -1,0 +1,73 @@
+﻿@model IEnumerable<NGO>
+@{
+    ViewData["Title"] = "NGO Management";
+    Layout = "~/Views/Shared/admin_layout.cshtml";
+}
+
+<section class="py-5 bg-light">
+    <div class="container">
+        <!-- Page Header -->
+        <div class="row mb-4">
+            <div class="col text-center">
+                <h1 class="display-5">NGO Management</h1>
+                <p class="text-muted">Manage and update NGO details efficiently</p>
+            </div>
+        </div>
+
+        <!-- Add NGO Button -->
+        <div class="row mb-3">
+            <div class="col text-end">
+                <a asp-action="insertngo" asp-controller="admin" class="btn btn-primary">
+                    <i class="fas fa-add me-2"></i>Add New NGO
+                </a>
+            </div>
+        </div>
+
+        <!-- NGO Table -->
+        <div class="row">
+            <div class="col">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover align-middle">
+                        <thead class="table-dark text-center">
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Location</th>
+                                <th>Contact Info</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model != null && Model.Any())
+                            {
+                                @foreach (var ngo in Model)
+                                {
+                                    <tr>
+                                        <td class="text-center">@ngo.NGOId</td>
+                                        <td>@ngo.Name</td>
+                                        <td>@ngo.Location</td>
+                                        <td>@ngo.ContactInfo</td>
+                                        <td class="text-center">
+                                            <a asp-route-id="@ngo.NGOId" asp-action="edit_helpcenter" class="btn btn-warning btn-sm text-white">
+                                                <i class="fas fa-edit"></i> Edit
+                                            </a>
+                                            <a asp-route-id="@ngo.NGOId" asp-action="delete_help" class="btn btn-danger btn-sm text-white">
+                                                <i class="fas fa-trash"></i> Delete
+                                            </a>
+                                        </td>
+                                    </tr>
+                                }
+                            }
+                            else
+                            {
+                                <tr>
+                                    <td colspan="5" class="text-center text-muted">No NGOs found.</td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

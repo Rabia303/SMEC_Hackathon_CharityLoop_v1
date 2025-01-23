@@ -1,0 +1,60 @@
+﻿@model DonateClothes
+
+<section class="ls section_padding_100">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="vertical-item content-overlap">
+					<div class="item-media">
+						<img src="~/assets/images/donate.jpg" alt="Clothes Donation" />
+					</div>
+					<div class="item-content with_padding_big with_border theme_background fontsize_18">
+						<i class="fa fa-shirt highlight top_icon" aria-hidden="true"></i>
+						<h3 class="entry-title black text-center">Donate Clothes or Schedule Disposal</h3>
+
+						<form method="post" class="donate-form" asp-action="donateclothes">
+
+							<!-- Clothes Donation Section -->
+							<p class="text-center">Clothes Donation: Select nearby NGOs</p>
+							<div class="form-group">
+								<select asp-for="NGOId" asp-items="@ViewBag.ngoList" class="form-control">
+									<option selected>Select NGO</option>
+								</select>
+							</div>
+
+							<!-- Schedule Pickup Section -->
+							<p class="text-center">Schedule Pickup/Drop-off</p>
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="contact-form-date">
+										<label for="ScheduledDate">Pick-up Date</label>
+										<input type="date" asp-for="ScheduledDate" class="form-control" placeholder="Select Date">
+									</div>
+								</div>
+							</div>
+
+							<!-- Clothes Disposal Section -->
+							<p class="text-center">Clothes Disposal: Schedule Pickup for Non-donatable Clothes</p>
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="contact-form-message">
+										<input type="checkbox" asp-for="isDisposal" class="form-check-input">
+										<span>Check if you want to schedule an eco-friendly disposal for non-donatable clothes</span>
+									</div>
+								</div>
+							</div>
+
+							<!-- Submit Button -->
+							<div class="col-sm-12 text-center bottommargin_0">
+								<div class="contact-form-submit topmargin_30">
+									<button type="submit" class="theme_button wide_button">Donate Clothes / Schedule Disposal</button>
+								</div>
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,144 @@
+﻿@model IEnumerable<ourPrograms>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="intro_section page_mainslider ds black" style="position: relative; overflow: hidden;">
+    <div class="flexslider" data-dots="false">
+        <ul class="slides">
+            <li>
+                <img src="~/assets/images/slide01.jpg" alt="Slide 1" style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <div class="slide_description_wrapper" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white;">
+                                <div class="slide_description">
+                                    <h3 class="bold" style="font-size: 36px; font-weight: 600;">Make a Difference Today</h3>
+                                    <p class="thin grey" style="font-size: 18px; opacity: 0.8; margin-top: 20px;">
+                                        Donate or responsibly dispose of your clothes to reduce waste and support those in need. Your actions help us create a more sustainable world.
+                                    </p>
+                                    <a asp-action="donate" asp-controller="home" class="theme_button color1 wide_button" style="margin-top: 30px; padding: 15px 30px; font-size: 16px;">Donate</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="~/assets/images/slide02.jpg" alt="Slide 2" style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <div class="slide_description_wrapper" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white;">
+                                <div class="slide_description">
+                                    <h3 class="bold" style="font-size: 36px; font-weight: 600;">Join the Eco-Friendly Movement</h3>
+                                    <p class="thin grey" style="font-size: 18px; opacity: 0.8; margin-top: 20px;">Help reduce textile waste and improve the planet for future generations. Your contributions make a lasting impact!</p>
+                                    <a asp-action="Careers" asp-controller="home" class="theme_button color1 wide_button" style="margin-top: 30px; padding: 15px 30px; font-size: 16px;">Volunteer</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <img src="~/assets/images/slide03.jpg" alt="Slide 3" style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <div class="slide_description_wrapper" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white;">
+                                <div class="slide_description">
+                                    <h3 class="bold" style="font-size: 36px; font-weight: 600;">Give Clothes a New Life</h3>
+                                    <p class="thin grey" style="font-size: 18px; opacity: 0.8; margin-top: 20px;">Donate your gently used clothes to help others and protect the environment. A small act of kindness can make a huge difference.</p>
+                                    <a asp-action="Careers" asp-controller="home" class="theme_button color1 wide_button" style="margin-top: 30px; padding: 15px 30px; font-size: 16px;">Donate</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section id="why-donate-clothes" class="section_padding_0 columns_margin_bottom_30" style="padding: 50px 0;">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-sm-12">
+                <h2 class="section_header bold" style="font-size: 36px; color: #333; margin-bottom: 20px;">
+                    Why You Should Donate Your Clothes
+                </h2>
+                <p style="font-size: 18px; margin-bottom: 40px; color: #777;">Donating your clothes can make a huge difference in someone's life. Here’s how your donations help the needy and the environment.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Card 1 - Helping Those in Need -->
+            <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                <div class="card" style="border: none; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 10px;">
+                    <img src="~/assets/images/boy.png" class="card-img-top" alt="Helping Those in Need" style="border-radius: 10px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title" style="font-size: 20px; font-weight: bold; color: #333;">Helping Those in Need</h5>
+                        <p class="card-text" style="font-size: 16px; color: #555;">When you donate your clothes, you're giving essential clothing to individuals and families who might not otherwise have access to them. It provides comfort, warmth, and dignity to people in need.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 - Reduce Waste -->
+            <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                <div class="card" style="border: none; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 10px;">
+                    <img src="~/assets/images/person2.png" class="card-img-top" alt="Reduce Waste" style="border-radius: 10px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title" style="font-size: 20px; font-weight: bold; color: #333;">Reduce Waste</h5>
+                        <p class="card-text" style="font-size: 16px; color: #555;">Donating clothes helps reduce waste and lowers the amount of textiles that end up in landfills. Instead of throwing away perfectly good clothes, you can give them a second life.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 - Environmental Impact -->
+            <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                <div class="card" style="border: none; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 10px;">
+                    <img src="~/assets/images/person.png" class="card-img-top" alt="Environmental Impact" style="border-radius: 10px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title" style="font-size: 20px; font-weight: bold; color: #333;">Positive Environmental Impact</h5>
+                        <p class="card-text" style="font-size: 16px; color: #555;">Clothing production has a significant environmental impact, using up water and creating waste. By donating clothes, you are helping reduce the demand for new clothing production, conserving resources and protecting the environment.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Card 4 - Supporting Charities -->
+            <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                <div class="card" style="border: none; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 10px;">
+                    <img src="~/assets/images/blog_post3.jpg" class="card-img-top" alt="Supporting Charities" style="border-radius: 10px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title" style="font-size: 20px; font-weight: bold; color: #333;">Supporting Charities</h5>
+                        <p class="card-text" style="font-size: 16px; color: #555;">Your clothing donations support charitable organizations that rely on the generosity of people like you. These organizations can distribute your donations to those who need them the most, often creating a lasting impact in their communities.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 - Tax Deductions -->
+            <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                <div class="card" style="border: none; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 10px;">
+                    <img src="~/assets/images/blog_post2.jpg" class="card-img-top" alt="Tax Deductions" style="border-radius: 10px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title" style="font-size: 20px; font-weight: bold; color: #333;">Tax Deductions</h5>
+                        <p class="card-text" style="font-size: 16px; color: #555;">In many regions, you can claim tax deductions for charitable donations, including clothes. This means donating your gently used clothes not only helps others but can also benefit you financially.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 - Helping the Homeless -->
+            <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
+                <div class="card" style="border: none; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border-radius: 10px;">
+                    <img src="~/assets/images/blog_post1.jpg" class="card-img-top" alt="Helping the Homeless" style="border-radius: 10px;">
+                    <div class="card-body text-center">
+                        <h5 class="card-title" style="font-size: 20px; font-weight: bold; color: #333;">Helping the Homeless</h5>
+                        <p class="card-text" style="font-size: 16px; color: #555;">For people experiencing homelessness, clothing is often one of the most basic and urgent needs. Your donation can give them the warmth and protection they need in difficult times.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
