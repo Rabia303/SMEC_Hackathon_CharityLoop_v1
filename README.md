@@ -1,126 +1,187 @@
+Sure! Here's the updated version of the README with your requested adjustments:
+
+---
+
 # NGO Donation and Management Platform
 
-## Overview
-The **NGO Donation and Management Platform** is a web-based application designed to simplify the process of clothing donations and disposals. This platform connects users with registered NGOs, promotes sustainable practices, and offers incentives like redeemable vouchers from partner brands. It includes an **admin panel** for managing NGOs, user activities, and brand collaborations.
+---
+
+## 🌟 Overview
+
+The **NGO Donation and Management Platform** is a transformative solution designed to connect individuals with non-governmental organizations (NGOs). The platform promotes **sustainability** by simplifying clothing donations and eco-friendly disposals while incentivizing users through **redeemable vouchers** from partner brands.
+
+This platform includes:
+
+- A **user-friendly interface** for donors.
+- A **powerful admin dashboard** for NGOs to manage operations, partnerships, and engagement efficiently.
+- **Scalable architecture** to drive social impact using technology.
 
 ---
 
-## Problem Statement
-Improper disposal of unused clothes contributes to environmental pollution and textile waste. Individuals often lack accessible solutions to donate or dispose of clothing sustainably. Simultaneously, organizations and brands promoting sustainability face challenges in engaging donors effectively. This project aims to bridge these gaps by creating a platform that simplifies the donation and disposal process while incentivizing eco-friendly behavior.
+## 🚩 Problem Statement
+
+Clothing waste is a growing contributor to environmental pollution. Traditional donation and disposal systems often fail due to:
+
+- Lack of accessibility.
+- Inefficiency in operations.
+- Absence of user engagement strategies.
+
+This platform solves these problems by:
+
+- **Simplifying donations and eco-friendly disposal**.
+- **Incentivizing users** through brand vouchers.
+- **Optimizing NGO operations** with a centralized management system.
 
 ---
 
-## Features
+## 🔑 Key Features
 
-### User Module:
-- **Registration and Login**: Secure account creation using email or phone number.
-- **Clothes Donation**:
-  - Select nearby NGOs for donations.
-  - Schedule pickups or drop-offs with NGOs.
-- **Clothes Disposal**:
-  - Eco-friendly pickup scheduling for clothes unsuitable for donation.
-- **Incentives**:
-  - Earn and redeem vouchers for donations.
-- **Tracking**:
-  - Monitor donation/disposal status (e.g., "Pending," "Picked Up," "Delivered").
+### 🛠 User Module:
 
-### Admin Module:
-- **NGO Management**:
-  - Add, update, or remove NGOs.
-  - Monitor NGO activity and performance.
-- **Brand Management**:
-  - Manage partner brands and voucher rules.
-- **Activity Dashboard**:
-  - Track all user activities and engagement metrics.
-- **User Management**:
-  - Oversee user profiles and resolve issues.
+1. **Account Management:**
+   - Secure registration and login via email or phone.
+2. **Clothes Donation:**
+   - Locate nearby NGOs and schedule pickups.
+   - Track donation requests with status updates.
+3. **Eco-Friendly Disposal:**
+   - Schedule disposals for non-donatable items.
+   - Real-time progress tracking.
+4. **Incentives:**
+   - Earn vouchers from partner brands for every successful donation.
+5. **Donation Tracker:**
+   - Monitor donation progress (e.g., "Pending," "Picked Up," "Delivered").
+
+### 📊 Admin Module:
+
+1. **NGO Management:**
+   - Add, update, or remove NGOs.
+   - Track NGO activities.
+2. **Partner Management:**
+   - Manage brand partnerships.
+   - Configure voucher rules.
+3. **Activity Dashboard:**
+   - Monitor user activities, donations, and engagement metrics.
+4. **Content Management:**
+   - Edit website sections like "About Us," FAQs, and initiatives.
+5. **Reports & Analytics:**
+   - Generate insights to optimize operations.
 
 ---
 
-## Technology Stack
+## 🖥 Technology Stack
 
 ### Frontend:
-- **Framework**: Bootstrap
-- **Features**: Responsive design for both user and admin panels
+
+- **HTML**: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/html.png" alt="HTML Logo" width="40"> - For structuring the content of the web pages.
+- **CSS**: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/css.png" alt="CSS Logo" width="40"> - For styling and layout adjustments.
+- **JavaScript**: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/javascript.png" alt="JavaScript Logo" width="40"> - For making the site interactive.
+- **Bootstrap**: <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/bootstrap.png" alt="Bootstrap Logo" width="40"> - For responsive design and ready-made UI components.
 
 ### Backend:
-- **Framework**: .NET
-- **Features**:
-  - Secure API endpoints
-  - Real-time notifications and data handling
+
+- **.NET Core**: <img src="https://static.wikia.nocookie.net/logopedia/images/c/c7/Microsoft_.NET_StartupImage.svg/revision/latest/scale-to-width-down/512?cb=20200629113510" alt=".NET Core Logo" width="40">  - Framework for building the API and server-side logic.
 
 ### Database:
-- **SQL Server**:
-  - Optimized queries and stored procedures for data handling
 
-### Third-Party Integrations:
-1. **Map Integration**: Locate NGOs and schedule pickups/drop-offs.
-2. **Voucher System**: Integration with brand APIs for voucher validation.
-3. **Notification System**: Email and SMS alerts for users and NGOs.
+- **SQL Server**: <img src="https://cdn-icons-png.flaticon.com/512/5968/5968364.png" alt="SQL Server Logo" width="40"> - For data storage and management.
 
 ---
 
-## How to Set Up and Use
+## 🛠 Setup Guide
 
 ### Prerequisites:
-1. **Tools**:
-   - Visual Studio 2022 or higher
-   - SQL Server
-   - Web browser (e.g., Chrome, Edge)
-   - (Optional) Postman for API testing
-2. **Packages**:
-   - .NET Core 6.0 SDK
-   - Pre-configured Bootstrap (included in project files)
 
-### Steps to Set Up the Project:
-1. **Clone the Repository**:
+1. **Software Requirements:**
+   - Visual Studio 2022 or later
+   - SQL Server
+   - Modern web browser (e.g., Chrome, Edge)
+2. **Packages:**
+   - .NET Core 6.0 SDK
+
+### Installation Steps:
+
+1. **Clone the Repository:**
    ```bash
    git clone https://github.com/your-username/ngo-management-platform.git
    cd ngo-management-platform
    ```
-
-2. **Set Up SQL Server Database**:
+2. **Database Setup:**
    - Open SQL Server Management Studio (SSMS).
    - Create a database (e.g., `NGO_Management`).
-   - Run the provided SQL scripts to create tables and stored procedures.
-
-3. **Configure Connection String**:
-   - Update the `appsettings.json` file:
+   - Execute SQL scripts in the `/Database` folder.
+3. **Configure Connection String:**
+   - Update `appsettings.json`:
      ```json
      "ConnectionStrings": {
        "DefaultConnection": "Server=YOUR_SERVER_NAME;Database=NGO_Management;User Id=YOUR_USERNAME;Password=YOUR_PASSWORD;"
      }
      ```
+4. **Restore Dependencies:**
+   - Open Visual Studio.
+   - Navigate to **Tools > NuGet Package Manager > Manage NuGet Packages for Solution**.
+   - Restore missing packages.
+5. **Run the Application:**
+   - Set the startup project to `NGO.Web`.
+   - Press `F5` to launch.
 
-4. **Restore NuGet Packages**:
-   - In Visual Studio, go to **Tools > NuGet Package Manager > Manage NuGet Packages for Solution** and restore dependencies.
+### Access Points:
 
-5. **Run the Project**:
-   - Set the startup project (e.g., `NGO.Web`).
-   - Press `F5` to start the application.
-
-### How to Use:
-1. **Access**:
-   - Use `/User` for the user panel.
-   - Use `/Admin` for the admin panel.
-2. **Register and Login**:
-   - Create an account to access features.
-   - Admin credentials can be configured in the database.
-3. **Explore**:
-   - Donate or dispose of clothes.
-   - Admins manage NGOs, brands, and users.
+- **User Panel:** Accessible at `/User` for donors.
+- **Admin Panel:** Accessible at `/Admin` for administrators.
 
 ---
 
-## Challenges and Solutions
-- **Challenge**: API integration issues
-  - **Solution**: Modular architecture ensured smooth API communication.
-- **Challenge**: Managing large datasets in SQL Server
-  - **Solution**: Implemented indexing and optimized stored procedures.
+## 📈 Highlights
 
+- **User-Centric Design:** Built with accessibility and usability in mind.
+- **Scalable Architecture:** Seamlessly handles growing user and NGO bases.
+- **Sustainability-Focused:** Encourages eco-friendly practices through incentives.
 
 ---
 
-## Contact
-For queries or contributions, reach out to [your-email@example.com](mailto:rabiaimtiaz203@gmail.com).
+## 🛤 Future Roadmap
 
+1. **Mobile App Development:**
+   - Build a cross-platform mobile app using Flutter.
+2. **Advanced Analytics:**
+   - AI-powered insights for user engagement and NGO efficiency.
+3. **Personalized Recommendations:**
+   - Tailored suggestions to enhance user involvement.
+
+---
+
+## 🎥 Media
+
+### Screenshots
+
+#### Homepage
+
+<div>
+  <img src="https://raw.githubusercontent.com/Rabia303/SMEC_Hackathon_CharityLoop_v1/master/web1.PNG" width="250" height="150"> 
+  <img src="https://raw.githubusercontent.com/Rabia303/SMEC_Hackathon_CharityLoop_v1/master/web2.PNG" width="250" height="150"> 
+  <img src="https://raw.githubusercontent.com/Rabia303/SMEC_Hackathon_CharityLoop_v1/master/web3.PNG" width="250" height="150"> 
+
+</div>
+
+#### Admin Dashboard
+
+<div>
+  <img src="https://raw.githubusercontent.com/Rabia303/SMEC_Hackathon_CharityLoop_v1/master/add1.PNG" width="250" height="150"> 
+  <img src="https://raw.githubusercontent.com/Rabia303/SMEC_Hackathon_CharityLoop_v1/master/add2.PNG" width="250" height="150"> 
+  <img src="https://raw.githubusercontent.com/Rabia303/SMEC_Hackathon_CharityLoop_v1/master/add6.PNG" width="250" height="150"> 
+</div>
+
+
+### Video Demo
+
+[Watch the Demo](https://github.com/Rabia303/SMEC_Hackathon_CharityLoop_v1/blob/master/charity_loop_demo_vedio.mp4)
+
+---
+
+## ✉ Contact
+
+For inquiries or contributions, please email: [rabiaimtiaz203@gmail.com](mailto:rabiaimtiaz203@gmail.com).
+
+---
+
+This version adjusts the formatting and clarifies the role of each technology in your stack. Let me know if you’d like any more modifications!
