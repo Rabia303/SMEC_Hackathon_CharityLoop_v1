@@ -179,6 +179,3 @@ This platform solves these problems by:
 
 For inquiries or contributions, please email: [rabiaimtiaz203@gmail.com](mailto:rabiaimtiaz203@gmail.com).
 
----
-
-This version adjusts the formatting and clarifies the role of each technology in your stack. Let me know if you’d like any more modifications!
