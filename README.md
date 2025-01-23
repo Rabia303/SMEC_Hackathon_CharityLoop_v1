@@ -1,7 +1,3 @@
-Sure! Here's the updated version of the README with your requested adjustments:
-
----
-
 # NGO Donation and Management Platform
 
 ---
@@ -174,7 +170,8 @@ This platform solves these problems by:
 
 ### Video Demo
 
-[Watch the Demo](https://github.com/Rabia303/SMEC_Hackathon_CharityLoop_v1/blob/master/charity_loop_demo_vedio.mp4)
+[Watch the Demo](https://raw.githubusercontent.com/Rabia303/SMEC_Hackathon_CharityLoop_v1/master/charity_loop_demo_vedio.mp4)
+
 
 ---
 
